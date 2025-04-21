@@ -10,7 +10,7 @@ export const prepareQuestions = (
   numberOfQuestions: number
 ): Question[] => {
   // Sort questions by question number to ensure proper ordering
-  const sortedQuestions = [...allQuestions].sort((a, b) => a.question_number - b.question_number);
+  const sortedQuestions = [...allQuestions];
   
   // Find questions starting from the requested number
   let selectedQuestions = sortedQuestions;
